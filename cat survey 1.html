@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Cat Survey 1.css">
+  </head>
+  <body>
+    <h1 id="title">The Cat Survey</h1>
+    <h2>Please fill out the information below</h2>
+    <p id="description">This form is intended for cats only. If you are not a cat, do not fill this out!</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <label for="name" id="name-label">Name:
+        <input required id="name" type="text" placeholder="Bastet">
+      <label for="email" id="email-label">Email:
+        <input required id="email" type="email" placeholder="catgod3000@catmail.com">
+    </fieldset> 
+    <fieldset>
+      <label for="age" id="number-label">Enter your age:
+        <input required id="number" type="number" min=".5" max="5000" placeholder="3568">
+      <label for="nine-lives">Which of your 9 lives are you currently on?
+        <select required id="dropdown" name="nine-lives">
+          <option value="">(select one)</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">I've lost track</option>
+          <option value="11">I'm immortal, you fool!<option>
+        </select>
+    </fieldset>
+    <fieldset>
+     <legend name="length">What is your fur length?</legend>
+      <label for="short" class="inline">Short
+        <input checked id="short" name="fur-length" required type="radio" value="short" class="inline">
+      </label>
+      <label for="medium" class="inline">Medium
+        <input id="medium" name="fur-length" required type="radio" value="medium" class="inline">
+      </label>
+      <label for="long" class="inline">Long
+        <input id="long" name="fur-length" required type="radio" value="long" class="inline">
+      </label>
+     <div class="length-groom"></div>
+     <legend name="grooming-time">How much time do you spend on grooming each day?</legend>
+      <label for="one-two-hours">1-2 Hours
+        <input checked id="one-two-hours" name="grooming-time" required type="checkbox" value="one-two-hours" class="inline">
+      </label>
+      <label for="two-three-hours">2-3 Hours
+        <input id="two-three-hours" name="grooming-time" required type="checkbox" value="two-three-hours" class="inline">
+      </label>
+      <label for="three-four-hours">3-4 Hours
+        <input id="three-four-hours" name="grooming-time" required type="checkbox" value="three-four-hours" class="inline">
+      </label>
+      <label for="infinite">I never stop grooming
+        <input id="inifinite" name="grooming-time" required type="checkbox" value="infinite" class="inline">
+      </label>    
+    </fieldset>
+    <fieldset>
+      <label for="personality" >Please describe your personality:
+        <textarea id="personality" name="personality" required rows:"4" Cols:"5" placeholder="I really enjoy being an asshole..." class="inline"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

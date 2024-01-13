@@ -1,0 +1,55 @@
+nav{
+    display: block;
+    background-color: rgb(100,100,200);
+    border-right: 5px solid black;
+    width: 240px;
+    height: 100%;
+  }
+  #navbar{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #navbar li{
+    border-top: 2px solid black;
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    left: 2px;
+  }
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #nav-link{
+    display: block;
+    top:0;
+    left: 0;
+    text-align: left;
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+  body{
+    position: absolute; 
+    margin-left: 250px;
+    padding-bottom: 50px;
+  }
+  header{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 20px;
+  }
+  #dog-title{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
